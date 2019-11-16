@@ -1,0 +1,428 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Anton|Oswald:200,300,400|Teko:300,400&display=swap&subset=latin-ext');
+
+/* global */
+
+body {
+    font-family: 'Oswald', sans-serif;
+    color: rgba(227, 227, 227, 1);
+    background-color: rgba(0, 0, 0, 0.9);
+    background-image: url("images/background1.jpg");
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* headers */
+
+h2,
+h3 {
+    font-family: 'teko', sans-serif;
+    font-weight: 100;
+}
+
+/* h2 main title */
+
+h2 {
+    color: rgba(227, 227, 227, 1); 
+}
+
+/* desktop header */
+
+h3 {
+    font-size: 3rem;
+    color: rgba(227, 227, 227, 1);
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+/* mobile header */
+
+h4 {
+    font-family: 'Anton' sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100px;
+    margin: 0 0 30px 0;
+    padding: .1em 1em;
+    background: rgba(146, 20, 12, 1);
+}
+
+/* standard button */
+
+button {
+    font-family: 'oswald', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: rgba(227, 227, 227, 1);
+    width: 100%; 
+    max-width: 340px;
+    height: 60px;
+    background-color: rgba(146, 20, 12, 0);
+    border: 1px solid rgba(146, 20, 12, 1);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* section paragraf */
+
+p {
+    font-size: 1.5rem;
+    color: rgba(227, 227, 227, 1);
+    text-align: justify;
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+
+/* hide/show items in desktop/mobile view */
+
+.desktop {
+    display: none;
+}
+
+/* center main buttons */
+
+.btn {
+    text-align: center;
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+
+/* add separator and margin-bottom to every section */
+
+section {
+    border-bottom: 1px solid rgba(146, 20, 12, 1);
+    margin: 0 0 30px 0;
+}
+
+/* change h3 color in section boks, crossfit, siłownia */
+
+.h3-color-change {
+    color: rgba(148, 139, 137, 1);
+}
+
+/* header, hamburger-menu */
+
+.header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    line-height: 4rem;
+    margin: 0 1.5em;
+}
+
+.menu {
+    text-align: left;
+    width: 75%;
+    display: none;
+}
+
+.menu a {
+    font-family: 'oswald', sans-serif;
+    font-size: 1.25rem;
+    color: rgba(227, 227, 227, 1);
+    background: rgba(148, 139, 137, 0.8);
+    clear: left;
+    text-decoration: none;
+    font-weight: 400;
+    display: block;
+    margin: 0;
+    border-bottom: 1px solid rgba(148, 139, 137, 1);
+}
+
+.menu a:hover,
+.menu a:focus {
+    color: #FFFFFF;
+    background: rgba(148, 139, 137, 0.9);
+}
+
+label {
+    float: left;
+    display: block;
+    margin: 1.9em;
+    cursor: pointer;
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked + .menu {
+    display: block;
+}
+
+.social-box-mobile {
+    display: flex;
+    width: 290px;
+    justify-content: space-between;
+    margin: 0 2.2em;
+}
+
+/* hero */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-quote {
+    text-align: right;
+    display: none;
+}
+
+.hero-features {
+    margin: 90px 0 0 0;
+}
+
+.hero-title {
+    background-color: rgba(146, 20, 12, 0.8);
+    font-size: 4.1rem;
+    line-height: 5rem;
+    font-weight: 100;
+    text-align: right;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+    padding: .5em;  
+}
+
+.hero-main-titleA,
+.hero-main-titleB {
+    margin: 0;
+    padding: 0;
+}
+
+.hero-main-titleB {
+    line-height: 3rem;
+    margin-top: .1em 
+}
+
+.hero-subtitle1 {
+    font-family: 'teko', sans-serif;
+    color: rgba(146, 20, 12, 1);
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: center;
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+
+/* main/aside content side margin */
+
+.main {
+    margin: 0 1em;
+}
+
+/* treningi */
+
+.treningi {
+    display: flex;
+    flex-direction: column;
+}
+
+.treningi-features-panel {
+    margin: 0 0 30px 0;
+}
+
+.treningi-features-panel-footer {
+    text-align: right;
+}
+
+.treningi a {
+    display: inline-block;
+    font-family: 'oswald', sans-serif;
+    font-size: 1rem;
+    color: rgba(227, 227, 227, 1);
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: right;
+    background: rgba(92, 85, 82, 1);
+    padding: .1em 1em;
+}
+
+/* trenerzy */
+
+.trenerzy {
+    margin: 0 0 30px 0;
+}
+
+.trenerzy-features {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 30px 0;
+}
+
+.trenerzy-features-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.trenerzy-features-panel img {
+    width: 100%;
+}
+
+.trenerzy-features-panel-name {
+    width: 100%;
+    border: 1px solid rgba(146, 20, 12, 1);
+    box-sizing: border-box;
+    margin: 0 0 30px 0;
+}
+
+.trenerzy-features:last-child {
+    margin: 0;
+}
+
+.name1 {
+    font-family: 'oswald', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.name2 {
+    font-family: 'oswald', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+/* program */
+
+.program-features {
+    font-family: 'teko', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.program-features p {
+    font-size: 2rem;
+}
+
+.program-features-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 40%;
+    margin: 0 0 30px 0;
+    padding: 1em;
+    border: 1px solid rgba(146, 20, 12, 1);
+}
+
+.program-features-panel a {
+    display: block;
+    width: 50%;
+    font-size: 1.5rem;
+    color: rgba(227, 227, 227, 1);
+    text-align: center;
+    margin: .5em;
+    background: rgba(146, 20, 12, 0.8);
+    text-decoration: none;
+}
+
+.program-features-panel-period {
+    display: flex;
+    justify-content: space-evenly;
+    padding: .5em;
+}
+
+.period {
+    width: 50px;
+    text-align: center;
+    border: 2px solid rgba(227, 227, 227, 1);
+    border-radius: 50%;
+}
+
+.program-features-panel-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* partnerzy */
+
+.partnerzy p {
+    display: flex;
+    flex-direction: column;
+    font-family: 'teko', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: .5em;
+    border: 1px solid rgba(146, 20, 12, 1);
+}
+
+/* kontakt */
+
+.footer {
+    margin: 0 1em 30px 1em;
+    border-bottom: 1px solid rgba(146, 20, 12, 1);
+}
+
+footer p {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.email {
+    text-transform: lowercase;
+}
+
+.social-box-footer {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 30px 0;
+}
+
+.social-box-footer img {
+    margin: 0 2em;
+}
+
+.map-mobile img {
+    width: 100%;
+}
+
+
+
+
+
