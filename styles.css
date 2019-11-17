@@ -9,7 +9,7 @@ body {
     color: rgba(227, 227, 227, 1);
     background-color: rgba(0, 0, 0, 0.9);
     background-image: url("images/background1.jpg");
-    background-size: cover;
+    background-size: contain;
     background-blend-mode: multiply;
     padding: 0;
     margin: 0;
@@ -38,11 +38,11 @@ h2 {
 /* desktop header */
 
 h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: rgba(227, 227, 227, 1);
     font-weight: 400;
     text-transform: uppercase;
-    margin: 0;
+    margin: 0 0 10px 0;
     padding: 0;
 }
 
@@ -136,33 +136,34 @@ nav ul {
 }
 
 .menu li {
-    line-height: 4rem;
+    line-height: 3.5rem;
     margin: 0 1.5em;
 }
 
 .menu {
     text-align: left;
-    width: 75%;
+    width: 100%;
     display: none;
 }
 
 .menu a {
     font-family: 'oswald', sans-serif;
-    font-size: 1.25rem;
-    color: rgba(227, 227, 227, 1);
-    background: rgba(148, 139, 137, 0.8);
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(0, 0, 0, 1);
+    text-transform: uppercase;
+    background: rgba(148, 139, 137, 0.9);
     clear: left;
     text-decoration: none;
     font-weight: 400;
     display: block;
     margin: 0;
-    border-bottom: 1px solid rgba(148, 139, 137, 1);
+    border-bottom: 2px solid rgba(148, 139, 137, 1);
 }
 
 .menu a:hover,
 .menu a:focus {
-    color: #FFFFFF;
-    background: rgba(148, 139, 137, 0.9);
+    background: rgba(148, 139, 137, 1);
 }
 
 label {
@@ -361,7 +362,8 @@ label {
 
 .program-features-panel-period {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
     padding: .5em;
 }
 
@@ -395,7 +397,6 @@ label {
 
 .footer {
     margin: 0 1em 30px 1em;
-    border-bottom: 1px solid rgba(146, 20, 12, 1);
 }
 
 footer p {
@@ -418,8 +419,20 @@ footer p {
     margin: 0 2em;
 }
 
+.map-mobile {
+    padding: 0 0 30px 0;
+    margin: 0 0 30px 0;
+    border-bottom: 1px solid rgba(146, 20, 12, 1);
+}
+
 .map-mobile img {
-    width: 100%;
+    width: 100%; 
+}
+
+.copyright p {
+    font-size: 1rem;
+    font-weight: 100;
+    text-transform: capitalize;
 }
 
 

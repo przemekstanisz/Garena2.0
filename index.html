@@ -52,7 +52,7 @@
 
         </header>
 
-        <div class="hero"> <!-- hero start -->
+        <div id="home" class="hero"> <!-- hero start -->
 
             <p class="hero-quote">Twoje życie staje się lepsze tylko, kiedy Ty stajesz się lepszym</p> <!-- desktop only -->
 
@@ -80,10 +80,6 @@
 
                 </div>
 
-                <div class="btn">
-                    <button role="button">zapisz się</button>
-                </div>
-
             </div> <!-- hero title end -->
 
             <div class="desktop"> <!-- social box desktop only -->
@@ -98,7 +94,11 @@
 
         <main role="main" class="main"> <!-- main content start -->
 
-            <section class="treningi"> <!-- section treningi start -->
+            <div class="btn">
+                <button role="button">zapisz się</button>
+            </div>
+
+            <section id="treningi" class="treningi"> <!-- section treningi start -->
 
                 <h3 class="desktop-section-header desktop">treningi</h3> <!-- desktop only --> 
                 
@@ -119,7 +119,7 @@
                         </div>
 
                         <div class="treningi-features-panel-footer">
-                            <a href="#">więcej</a>
+                            <a href="#boks">więcej</a>
                         </div>
 
                     </div> <!-- container for sport 1/3 end --> 
@@ -139,7 +139,7 @@
                         </div>
 
                         <div class="treningi-features-panel-footer">
-                            <a href="#">więcej</a>
+                            <a href="#crossfit">więcej</a>
                         </div>
 
                     </div> <!-- container for 2/3 end -->
@@ -159,7 +159,7 @@
                         </div>
 
                         <div class="treningi-features-panel-footer">
-                            <a href="#">więcej</a>
+                            <a href="#siłownia">więcej</a>
                         </div>
 
                     </div> <!-- container for sport 3/3 end -->
@@ -168,7 +168,7 @@
 
             </section> <!-- section treningi end -->
 
-            <section class="trenerzy"> <!-- section trenerzy start -->
+            <section id="trenerzy" class="trenerzy"> <!-- section trenerzy start -->
 
                 <h3 class="desktop-section-header desktop">razem z z nami <span>przekrocz swoje granice</span></h3> <!-- desktop only --> 
 
@@ -237,7 +237,7 @@
 
             </section> <!-- section trenerzy end -->
 
-            <section class="boks"> <!-- section boks start -->
+            <section id="boks" class="boks"> <!-- section boks start -->
 
                 <h3 class="desktop-section-header desktop">boks</h3> <!-- desktop only --> 
 
@@ -253,7 +253,7 @@
 
             </section> <!-- section boks end -->
 
-            <section class="crossfit"> <!-- section crossfit start -->
+            <section id="crossfit" class="crossfit"> <!-- section crossfit start -->
 
                 <h3 class="desktop-section-header desktop">crossfit</h3> <!-- desktop only --> 
 
@@ -269,7 +269,7 @@
 
             </section> <!-- section crossfit end -->
 
-            <section class="siłownia"> <!-- section siłownia start -->
+            <section id="siłownia" class="siłownia"> <!-- section siłownia start -->
 
                 <h3 class="desktop-section-header desktop">siłownia</h3> <!-- desktop only --> 
 
@@ -285,7 +285,7 @@
 
             </section> <!-- section siłownia end -->
 
-            <section class="program"> <!-- section program start -->
+            <section id="oferta" class="program"> <!-- section program start -->
 
                 <h3 class="desktop-section-header desktop">wybierz swój program</h3> <!-- desktop only --> 
 
@@ -355,7 +355,7 @@
 
             </section> <!-- section program end -->
 
-            <section class="partnerzy"> <!-- aside content start -->
+            <section id="partnerzy" class="partnerzy"> <!-- aside content start -->
 
                 <h3 class="desktop-section-header desktop">nasi partnerzy</h3> <!-- desktop only --> 
 
@@ -369,16 +369,17 @@
 
         </main> <!-- main content end -->
 
-        <footer class="footer"> <!-- footer start -->
+        <footer id="kontakt" class="footer"> <!-- footer start -->
             
             <h4 class="mobile-section-header mobile">kontakt</h4> <!-- mobile only -->
 
-            <div class="footer">
+            <div>
 
                 <div> <!-- adress start -->
 
                     <h3 class="desktop-section-header desktop">kontakt</h3> <!-- desktop only -->
-                    <p>adres: ul. zwycięska 44b 00-000 wrocław</p>
+                    <p>adres: ul. zwycięska 44b </p>
+                    <p>00-000 wrocław</p>
                     <p>telefon: 777777777</p>
                     <p>email: <span class="email">garena@garena.pl</span></p>
                     <div class="social-box-footer">
@@ -395,6 +396,10 @@
                     <img src="images/section-contact-map-mobile.svg">
                 </div>
 
+            </div>
+
+            <div class="copyright">
+                <p>copyright 2019 Przemysław Stanisz</p>
             </div>
 
         </footer> <!-- footer end -->
