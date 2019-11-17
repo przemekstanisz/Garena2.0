@@ -16,6 +16,8 @@
 
         <header class="header">
 
+            <h1 class="desktop">gladiator arena gym</h1> <!-- desktop only -->
+
             <nav role="navigation"> <!-- hamburger menu start - in this layout only hamburger menu is used for desktop/mobile view -->
 
                 <label for="toggle">
@@ -40,9 +42,9 @@
 
             </nav> <!-- hamburger menu end -->
 
-            <h1 class="nav-header desktop">gladiator arena gym</h1> <!-- desktop only -->
+            
 
-            <div class="social-box-mobile"> <!-- mobile only -->
+            <div class="social-box-mobile mobile"> <!-- mobile only -->
 
                 <img src="images/facebook-mobile.svg">
                 <img src="images/instagram-mobile.svg">
@@ -54,47 +56,55 @@
 
         <div id="home" class="hero"> <!-- hero start -->
 
-            <p class="hero-quote">Twoje życie staje się lepsze tylko, kiedy Ty stajesz się lepszym</p> <!-- desktop only -->
+            <p class="hero-quote desktop">Twoje życie staje się lepsze tylko, kiedy Ty stajesz się lepszym</p> <!-- desktop only -->
+            
+            <div class="hero-features"> 
 
-            <div class="hero-features"> <!-- hero title start -->
+                <div class="hero-features-main"> <!-- hero main start -->
 
-                <div class="hero-above-title desktop"> <!-- desktop only -->
+                    <div class="hero-above-title desktop"> <!-- desktop only -->
 
-                    <p>boks</p>
-                    <p>crossfit</p>
-                    <p>siłownia</p>
+                        <p>boks</p>
+                        <p>crossfit</p>
+                        <p>siłownia</p>
+
+                    </div>
+
+                    <div class="hero-title"> <!-- hero title start -->
+
+                        <h2 class="hero-main-titleA">gladiator</h2>
+                        <h2 class="hero-main-titleB">arena</h2>
+
+                    </div>
+
+                    <div class="hero-subtitle">
+
+                        <p class="hero-subtitle1">autentyczne miejsce treningu</p>
+                        <p class="hero-subtitle2 desktop">przyłacz się do nas i trenuj jak zawodowiec</p> <!-- desktop only -->             
+
+                    </div>
+
+                    <div class="btn-desktop desktop">
+                            <button role="button">zapisz się</button>
+                    </div>
+
+                </div>  <!-- hero main end -->
+
+                <div class="social-box-desktop desktop"> <!-- social box desktop only -->
+
+                    <img src="images/facebook-desktop.svg">
+                    <img src="images/instagram-desktop.svg">
+                    <img src="images/twitter-desktop.svg">
 
                 </div>
 
-                <div class="hero-title">
-
-                    <h2 class="hero-main-titleA">gladiator</h2>
-                    <h2 class="hero-main-titleB">arena</h2>
-
-                </div>
-
-                <div class="hero-subtitle">
-
-                    <p class="hero-subtitle1">autentyczne miejsce treningu</p>
-                    <p class="hero-subtitle2A desktop">przyłacz się do nas<span class="hero-subtitle2B">trenuj jak zawodowiec</span></p> <!-- desktop only -->             
-
-                </div>
-
-            </div> <!-- hero title end -->
-
-            <div class="desktop"> <!-- social box desktop only -->
-
-                <img src="images/facebook-desktop.svg">
-                <img src="images/instagram-desktop.svg">
-                <img src="images/twitter-desktop.svg">
-
-            </div>
+            </div> <!-- hero features end -->        
 
         </div > <!-- hero end -->
 
         <main role="main" class="main"> <!-- main content start -->
 
-            <div class="btn">
+            <div class="btn mobile">
                 <button role="button">zapisz się</button>
             </div>
 
