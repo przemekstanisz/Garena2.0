@@ -38,7 +38,7 @@ h2 {
 /* desktop header */
 
 h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: rgba(227, 227, 227, 1);
     font-weight: 400;
     text-transform: uppercase;
@@ -343,6 +343,7 @@ label {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 45%;
     min-width: 40%;
     margin: 0 0 30px 0;
     padding: 1em;
