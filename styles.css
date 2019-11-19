@@ -35,7 +35,8 @@ h1 {
 }
 
 h2,
-h3 {
+h3,
+h5 {
     font-family: 'teko', sans-serif;
     font-weight: 100;
 }
@@ -68,6 +69,32 @@ h4 {
     margin: 0 0 30px 0;
     padding: .1em 1em;
     background: rgba(146, 20, 12, 1);
+}
+
+/* section treningi headers */
+
+h5 {
+    font-size: 5rem;
+    line-height: 4rem;
+    color: rgba(227, 227, 227, 1);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+/* desktop header */
+
+h6 {
+    font-family: 'teko', sans-serif;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: rgba(146, 20, 12, 1);
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+    padding: 0;
 }
 
 /* standard button */
@@ -243,7 +270,7 @@ label {
     padding: 0;
 }
 
-/* main/aside content side margin */
+/* main/aside content margin */
 
 .main {
     margin: 0 1em;
@@ -279,10 +306,6 @@ label {
 
 /* trenerzy */
 
-.trenerzy {
-    margin: 0 0 30px 0;
-}
-
 .trenerzy-features {
     display: flex;
     flex-wrap: wrap;
@@ -298,13 +321,15 @@ label {
 
 .trenerzy-features-panel img {
     width: 100%;
+
 }
 
-.trenerzy-features-panel-name {
-    width: 100%;
+.trenerzy-features-panel-name-mobile {
+    width: 90%;
+    background: rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(146, 20, 12, 1);
     box-sizing: border-box;
-    margin: 0 0 30px 0;
+    margin: -5em 0 40px 0;
 }
 
 .trenerzy-features:last-child {
@@ -389,15 +414,21 @@ label {
 
 /* partnerzy */
 
-.partnerzy p {
+.partnerzy-features-panel {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(146, 20, 12, 1);
+    margin: 0 0 30px 0;
+}
+
+.partnerzy p {
     font-family: 'teko', sans-serif;
     font-size: 3rem;
     text-transform: uppercase;
     text-align: center;
+    margin: 0;
     padding: .5em;
-    border: 1px solid rgba(146, 20, 12, 1);
 }
 
 /* kontakt */
@@ -462,7 +493,17 @@ MEDIA
 
     h2 {
     font-weight: 400;
-}
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    /* add separator and margin-bottom to every section */
+
+    section {
+        border-bottom: none;
+    }
 
     /* header and nav */
 
@@ -472,6 +513,24 @@ MEDIA
 
     .menu {
         max-width: 30%;
+    }
+
+    .header-back-title {
+        position: absolute;
+        width: 100%;
+        font-family: 'teko', sans-serif;
+        color: rgba(0, 0, 0, 0);
+        -webkit-text-stroke: 1px rgba(227, 227, 227, 0.1);
+        font-size: 6rem;
+        line-height: .1rem;
+        text-transform: uppercase;
+        text-align: right;
+        margin: .55em 0 0 0;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
     }
 
     /* hero */
@@ -525,7 +584,6 @@ MEDIA
         text-transform: uppercase;
         margin: 0;
         padding: 0; 
-        
     }
 
     .hero-main-titleA,
@@ -570,13 +628,179 @@ MEDIA
     .social-box-desktop {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        margin: 0 2em 0 0;
+        justify-content: flex-start;
+        margin: 5em 2em 0 0;
     }
 
     .social-box-desktop img {
-        margin: 1.5em 0;
+        margin: 1em 0;
     }
+
+    /* main/aside content margin */
+
+    .main {
+        margin: 0 auto;
+    }   
+
+    .treningi-features,
+    .trenerzy,
+    .boks-features,
+    .crossfit-features,
+    .siłownia-features,
+    .program,
+    .partnerzy-features,
+    .footer-features {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* treningi */
+
+    .treningi {
+        background-color: rgba(0, 0, 0, 0.8);
+        background-image: url("images/section-treningi.jpg");
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-position: center; 
+    }
+
+    .treningi-features {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .treningi-features-panel {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        align-items: stretch;
+    }
+
+    .treningi img {
+        margin: 0 0 30px 0;
+    }
+
+    /* trenerzy */
+
+    .trenerzy-features {
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .trenerzy-features-panel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trenerzy-features-panel-name-desktop {
+        width: 100%;
+        border: 1px solid rgba(146, 20, 12, 1);
+        box-sizing: border-box;
+        margin: 0 0 30px 0;
+    }
+
+    /* boks crossfit siłownia */
+
+    .boks {
+        background-color: rgba(0, 0, 0, 0.8);
+        background-image: url("images/section-boks.jpg");
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-position: center; 
+    }
+
+    .crossfit {
+        background-color: rgba(0, 0, 0, 0.8);
+        background-image: url("images/section-crossfit.jpg");
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-position: center; 
+    }
+
+    .siłownia {
+        background-color: rgba(0, 0, 0, 0.8);
+        background-image: url("images/section-gym.jpg");
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-position: center; 
+    }
+
+    .boks p,
+    .crossfit p,
+    .siłownia p {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    /* program */
+
+    .program-features {
+        flex-wrap: nowrap;
+    }
+
+    .program-features-panel {
+        max-width: 18%;
+        min-width: 18%;
+    }
+
+    .program-features-panel:hover {
+        background: rgba(227, 227, 227, 0.1);
+    }
+
+    /* partnerzy */
+
+    .partnerzy {
+        background: rgba(92, 85, 82, 0.1);
+    }
+
+    .partnerzy-features {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .partnerzy-features-panel {
+        min-width: 30%;
+        padding: .5em;
+    }
+
+    .partnerzy-features-panel img {
+        width: 50%;
+    }
+
+    .partnerzy p {
+        font-size: 2rem;
+        padding: 0;
+    }
+
+    /* kontakt */
+
+    .footer {
+        margin: 0;
+        background: rgba(92, 85, 82, 0.1);
+    }
+
+    footer p {
+        text-align: left;
+    }
+
+    .social-box-footer {
+        justify-content: flex-start;
+    }
+
+    .social-box-footer img {
+        margin: 0 4em 0 0;
+    }
+
+    .map-desktop img {
+        width: 100%;
+    }
+
+    .copyright p {
+        text-align: center;
+    }
+
 }
 
 

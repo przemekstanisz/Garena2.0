@@ -16,6 +16,8 @@
 
         <header class="header">
 
+            <p class="header-back-title desktop">gladiator arena</p>
+
             <h1 class="desktop">gladiator arena gym</h1> <!-- desktop only -->
 
             <nav role="navigation"> <!-- hamburger menu start - in this layout only hamburger menu is used for desktop/mobile view -->
@@ -41,8 +43,6 @@
                 </ul>
 
             </nav> <!-- hamburger menu end -->
-
-            
 
             <div class="social-box-mobile mobile"> <!-- mobile only -->
 
@@ -110,7 +110,7 @@
 
             <section id="treningi" class="treningi"> <!-- section treningi start -->
 
-                <h3 class="desktop-section-header desktop">treningi</h3> <!-- desktop only --> 
+                <h6 class="desktop">treningi</h6> <!-- desktop only --> 
                 
                 <div class="treningi-features"> <!-- container for 3 types of sports - mobile=flex:column/desktop=flex:row -->
 
@@ -118,7 +118,7 @@
 
                         <h4 class="mobile-section-header mobile">boks</h4> <!-- mobile only -->
 
-                        <img class="desktop" src=""> <!-- desktop only --> 
+                        <img class="desktop" src="images/boks-icon-desktop.svg"> <!-- desktop only --> 
 
                         <h5 class="treningi-features-panel-header desktop">boks</h5> <!-- desktop only --> 
 
@@ -138,7 +138,7 @@
 
                         <h4 class="mobile-section-header mobile">crossfit</h4> <!-- mobile only -->
 
-                        <img class="desktop" src=""> <!-- desktop only --> 
+                        <img class="desktop" src="images/crossfit-icon-desktop.svg"> <!-- desktop only --> 
 
                         <h5 class="treningi-features-panel-header desktop">crossfit</h5> <!-- desktop only --> 
 
@@ -158,7 +158,7 @@
 
                         <h4 class="mobile-section-header mobile">siłownia</h4> <!-- mobile only -->
 
-                        <img class="desktop" src=""> <!-- desktop only --> 
+                        <img class="desktop" src="images/silownia-icon-desktop.svg"> <!-- desktop only --> 
 
                         <h5 class="treningi-features-panel-header desktop">siłownia</h5> <!-- desktop only --> 
 
@@ -178,21 +178,28 @@
 
             </section> <!-- section treningi end -->
 
-            <section id="trenerzy" class="trenerzy"> <!-- section trenerzy start -->
+            <section id="trenerzy" class="trenerzy section"> <!-- section trenerzy start -->
 
-                <h3 class="desktop-section-header desktop">razem z z nami <span>przekrocz swoje granice</span></h3> <!-- desktop only --> 
+                <h6 class="desktop">razem z nami <span>przekrocz swoje granice</span></h6> <!-- desktop only --> 
 
                 <h4 class="mobile-section-header mobile">trenerzy</h4> <!-- mobile only -->
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-                <div class="trenerzy-features"> <!-- container for every person - mobile:flex-wrap/desktop:flex:row -->
+                <div class="trenerzy-features"> <!-- container for every person - mobile:flex-wrap/desktop:flex:row - in every container double .img and name container is used - purpose: clear mobile/desktop view -->
 
                     <div class="trenerzy-features-panel"> <!-- person container 1/5 -->
                         
-                        <img src="images/trener1-mobile.svg">
+                        <img class="desktop" src="images/trener1.svg">
 
-                        <div class="trenerzy-features-panel-name"> <!-- name container -->
+                        <img class="mobile" src="images/trener1-mobile.svg">
+
+                        <div class="trenerzy-features-panel-name-desktop desktop"> <!-- name container -->
+                            <p class="name1">tomasz</p> 
+                            <p class="name2">kowalski</p>
+                        </div>
+
+                        <div class="trenerzy-features-panel-name-mobile mobile"> <!-- name container -->
                             <p class="name1">tomasz</p> 
                             <p class="name2">kowalski</p>
                         </div>
@@ -201,9 +208,16 @@
             
                     <div class="trenerzy-features-panel"> <!-- person container 2/5 -->
                         
-                        <img src="images/trener2-mobile.svg">
+                        <img class="desktop"  src="images/trener2.svg">
 
-                        <div class="trenerzy-features-panel-name"> <!-- name container -->
+                        <img class="mobile" src="images/trener2-mobile.svg">
+
+                        <div class="trenerzy-features-panel-name-desktop desktop"> <!-- name container -->
+                            <p class="name1">jan</p> 
+                            <p class="name2">nowak</p>
+                        </div>
+
+                        <div class="trenerzy-features-panel-name-mobile mobile"> <!-- name container -->
                             <p class="name1">jan</p> 
                             <p class="name2">nowak</p>
                         </div>
@@ -212,9 +226,16 @@
 
                     <div class="trenerzy-features-panel"> <!-- person container 3/5 -->
                         
-                        <img src="images/trener3-mobile.svg">
+                        <img class="desktop" src="images/trener3.svg">
 
-                        <div class="trenerzy-features-panel-name"> <!-- name container -->
+                        <img class="mobile" src="images/trener3-mobile.svg">
+
+                        <div class="trenerzy-features-panel-name-desktop desktop"> <!-- name container -->
+                            <p class="name1">anna</p> 
+                            <p class="name2">kucharska</p>
+                        </div>
+
+                        <div class="trenerzy-features-panel-name-mobile mobile"> <!-- name container -->
                             <p class="name1">anna</p> 
                             <p class="name2">kucharska</p>
                         </div>
@@ -223,9 +244,16 @@
 
                     <div class="trenerzy-features-panel"> <!-- person container 4/5 -->
                         
-                        <img src="images/trener4-mobile.svg">
+                        <img class="desktop" src="images/trener4.svg">
 
-                        <div class="trenerzy-features-panel-name"> <!-- name container -->
+                        <img class="mobile" src="images/trener4-mobile.svg">
+
+                        <div class="trenerzy-features-panel-name-desktop desktop"> <!-- name container -->
+                            <p class="name1">stefan</p> 
+                            <p class="name2">zawada</p>
+                        </div>
+
+                        <div class="trenerzy-features-panel-name-mobile mobile"> <!-- name container -->
                             <p class="name1">stefan</p> 
                             <p class="name2">zawada</p>
                         </div>
@@ -234,9 +262,16 @@
 
                     <div class="trenerzy-features-panel"> <!-- person container 5/5 -->
                         
-                        <img src="images/trener5-mobile.svg">
+                        <img class="desktop" src="images/trener5.svg">
 
-                        <div class="trenerzy-features-panel-name"> <!-- name container -->
+                        <img class="mobile" src="images/trener5-mobile.svg">
+
+                        <div class="trenerzy-features-panel-name-desktop desktop"> <!-- name container -->
+                            <p class="name1">borys</p> 
+                            <p class="name2">panek</p>
+                        </div>
+
+                        <div class="trenerzy-features-panel-name-mobile mobile"> <!-- name container -->
                             <p class="name1">borys</p> 
                             <p class="name2">panek</p>
                         </div>
@@ -249,55 +284,67 @@
 
             <section id="boks" class="boks"> <!-- section boks start -->
 
-                <h3 class="desktop-section-header desktop">boks</h3> <!-- desktop only --> 
+                <div class="boks-features">
 
-                <h4 class="mobile-section-header mobile">boks</h4> <!-- mobile only -->
+                    <h6 class="desktop">boks</h6> <!-- desktop only --> 
 
-                <h3 class="desktop-section-header"><span class="h3-color-change">witaj w </span>ringu wojowników</h3>
-                
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h4 class="mobile-section-header mobile">boks</h4> <!-- mobile only -->
 
-                <div class="btn">
-                    <button role="button">zapisz się</button>
+                    <h3><span class="h3-color-change">witaj w </span>ringu wojowników</h3>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <div class="btn">
+                        <button role="button">zapisz się</button>
+                    </div>
+
                 </div>
 
             </section> <!-- section boks end -->
 
             <section id="crossfit" class="crossfit"> <!-- section crossfit start -->
 
-                <h3 class="desktop-section-header desktop">crossfit</h3> <!-- desktop only --> 
+                <div class="crossfit-features">
 
-                <h4 class="mobile-section-header mobile">crossfit</h4> <!-- mobile only -->
+                    <h6 class="desktop">crossfit</h6> <!-- desktop only --> 
 
-                <h3 class="desktop-section-header"><span class="h3-color-change">poznaj </span>lepszego siebie</h3>
-                
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h4 class="mobile-section-header mobile">crossfit</h4> <!-- mobile only -->
 
-                <div class="btn">
-                    <button role="button">zapisz się</button>
+                    <h3><span class="h3-color-change">poznaj </span>lepszego siebie</h3>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <div class="btn">
+                        <button role="button">zapisz się</button>
+                    </div>
+
                 </div>
 
             </section> <!-- section crossfit end -->
 
             <section id="siłownia" class="siłownia"> <!-- section siłownia start -->
 
-                <h3 class="desktop-section-header desktop">siłownia</h3> <!-- desktop only --> 
+                <div class="siłownia-features">
 
-                <h4 class="mobile-section-header mobile">siłownia</h4> <!-- mobile only -->
+                    <h6 class="desktop">siłownia</h6> <!-- desktop only --> 
 
-                <h3 class="desktop-section-header"><span class="h3-color-change">trenuj o </span>każdej porze</h3>
-                
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h4 class="mobile-section-header mobile">siłownia</h4> <!-- mobile only -->
 
-                <div class="btn">
-                    <button role="button">zapisz się</button>
+                    <h3><span class="h3-color-change">trenuj o </span>każdej porze</h3>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <div class="btn">
+                        <button role="button">zapisz się</button>
+                    </div>
+
                 </div>
 
             </section> <!-- section siłownia end -->
 
             <section id="oferta" class="program"> <!-- section program start -->
 
-                <h3 class="desktop-section-header desktop">wybierz swój program</h3> <!-- desktop only --> 
+                <h6 class="desktop">wybierz swój program</h6> <!-- desktop only --> 
 
                 <h4 class="mobile-section-header mobile">program</h4> <!-- mobile only -->
                     
@@ -365,29 +412,33 @@
 
             </section> <!-- section program end -->
 
-            <section id="partnerzy" class="partnerzy"> <!-- aside content start -->
+            <section id="partnerzy" class="partnerzy">
 
-                <h3 class="desktop-section-header desktop">nasi partnerzy</h3> <!-- desktop only --> 
+                <h6 class="desktop">nasi partnerzy</h6> <!-- desktop only --> 
 
                 <h4 class="mobile-section-header mobile">partnerzy</h4> <!-- mobile only -->
 
-                <p>freshshop.pl</p>
-                <p>healthapp</p>
-                <p>healthservice.com</p>
+                <div class="partnerzy-features">
 
-            </section> <!-- aside content end -->
+                    <div class="partnerzy-features-panel"><img class="desktop" src="images/fresshop-icon.svg"><p>freshshop.pl</p></div>
+                    <div class="partnerzy-features-panel"><img class="desktop" src="images/healthapp-icon.svg"><p>healthapp</p></div>
+                    <div class="partnerzy-features-panel"><img class="desktop" src="images/hservicecom-icon.svg"><p>hservice.com</p></div>
+
+                </div>
+
+            </section> 
 
         </main> <!-- main content end -->
 
         <footer id="kontakt" class="footer"> <!-- footer start -->
-            
+
             <h4 class="mobile-section-header mobile">kontakt</h4> <!-- mobile only -->
 
-            <div>
+            <div class="footer-features">
 
                 <div> <!-- adress start -->
 
-                    <h3 class="desktop-section-header desktop">kontakt</h3> <!-- desktop only -->
+                    <h6 class="desktop">kontakt</h6> <!-- desktop only -->
                     <p>adres: ul. zwycięska 44b </p>
                     <p>00-000 wrocław</p>
                     <p>telefon: 777777777</p>
@@ -403,7 +454,11 @@
                 </div> <!-- adress end -->
 
                 <div class="map-mobile mobile">
-                    <img src="images/section-contact-map-mobile.svg">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20046.380258600613!2d16.96381339521483!3d51.09374396466686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1574200398960!5m2!1spl!2spl" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+
+                <div class="map-desktop desktop">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20046.380258600613!2d16.96381339521483!3d51.09374396466686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1574200398960!5m2!1spl!2spl" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 </div>
 
             </div>
