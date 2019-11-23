@@ -503,13 +503,10 @@ MEDIA
     }
 
     h3 {
-        text-align: center;
-    }
-
-    h3 {
         font-size: 3.5rem;
         line-height: 2rem;
         margin: 0 0 1em 0;
+        text-align: center;
     }
 
     /* remove separotors in sections */
@@ -574,34 +571,34 @@ MEDIA
         font-family: 'Parisienne', cursive;
         text-align: right;
         padding: 0 1.5em;
+        margin: 2em 0;
     }
 
     .hero-features {
         display: flex;
         justify-content: space-between;
-        margin: 0 0 0 7em;
+        margin: 3em 0 0 7em;
     }
 
     .hero-above-title {
         display: flex;
         text-transform: uppercase;
-        margin: 0 0 20px 0;
     }
 
     .hero-above-title p {
         font-family: 'teko', sans-serif;
         color: rgba(92, 85, 82, 1);
-        font-size: 1.9rem;
+        font-size: 1.5rem;
         font-weight: 100;
-        line-height: 1.9rem;
-        margin: 0 1em 0 .2em;
+        line-height: .5rem;
+        margin: 0 1em .4em .2em;
     }
 
     .hero-title {
         display: flex;
         text-align: left;
         background-color: rgba(146, 20, 12, 0);
-        font-size: 5.8rem;
+        font-size: 4rem;
         text-transform: uppercase;
         margin: 0;
         padding: 0; 
@@ -609,9 +606,7 @@ MEDIA
 
     .hero-main-titleA,
     .hero-main-titleB {
-        margin: 0;
-        padding: 0;
-        line-height: 6.8rem;
+        line-height: 6rem;
     }
 
     .hero-main-titleB {
@@ -620,23 +615,20 @@ MEDIA
 
     .hero-subtitle p {
         font-family: 'teko', sans-serif;
-        margin: 0 0 20px 0;
     }
 
     .hero-subtitle1 {
-        color: rgba(146, 20, 12, 1);
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 100;
-        line-height: 2.3rem;
+        line-height: 2rem;
         text-align: right;
-        padding: 0;
     }
 
     .hero-subtitle2 {
-        font-size: 1.9rem;
+        font-size: 1.5rem;
         color: rgba(92, 85, 82, 1);
         font-weight: 100;
-        line-height: 1.9rem;
+        line-height: 1.5rem;
         text-align: right;
         text-transform: uppercase;
     }
@@ -650,7 +642,7 @@ MEDIA
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        margin: 5em 2em 0 0;
+        margin: 3em 2em 0 0;
     }
 
     .social-box-desktop img {
@@ -719,17 +711,8 @@ MEDIA
         margin: 0;
     }
 
-    .trenerzy-features-panel {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .trenerzy-features-panel-name {
         width: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        border: 1px solid rgba(146, 20, 12, 1);
-        box-sizing: border-box;
         margin: 0 0 30px 0;
     }
 
@@ -742,8 +725,8 @@ MEDIA
         font-weight: 100;
         color: rgba(0, 0, 0, 0);
         -webkit-text-stroke: 1px rgba(227, 227, 227, 0.1);
-        font-size: 14rem;
-        line-height: 12rem;
+        font-size: 9rem;
+        line-height: 14rem;
         text-transform: uppercase;
         margin: 0;
         padding: 0 0 0 .5em;
@@ -823,17 +806,28 @@ MEDIA
         padding: 1em 1em;
     }
 
+    .oferta-features-panel-period {
+        margin: 1em;
+        min-width: 20%;
+    }
+
+    .oferta-features-panel-period p {
+        margin: 0;
+        padding: .5em;
+    }
+
     .oferta-features-part {
         display: flex;
         flex-direction: column;
         align-items: stretch;
         justify-content: center;
+        margin: 1em 0;
     }
 
     .oferta-bullets p {
         font-size: 1.5rem;
         font-weight: 100;
-        margin: 0 1em 1em 1em;
+        margin: 0 auto 1em auto;
         text-transform: lowercase;
         width: 80%;
     }
@@ -897,28 +891,80 @@ MEDIA
 
 @media (min-width: 992px) {
 
+    /* hero */
+
+    .hero-features {
+        margin: 0 0 0 7em;
+    }
+
+    .hero-above-title {
+        margin: 0 0 20px 0;
+    }
+
+    .hero-above-title p {
+        font-size: 1.9rem;
+        font-weight: 100;
+        line-height: 1.9rem;
+        margin: 0 1em 0 .2em;
+    }
+
+    .hero-title {
+        font-size: 5.8rem;
+    }
+
+    .hero-main-titleA,
+    .hero-main-titleB {
+        line-height: 6.8rem;
+    }
+
+    .hero-subtitle p {
+        font-family: 'teko', sans-serif;
+        margin: 0 0 20px 0;
+    }
+
+    .hero-subtitle1 {
+        font-size: 2.5rem;
+        line-height: 2.3rem;
+    }
+
+    .hero-subtitle2 {
+        font-size: 1.9rem;
+        line-height: 1.9rem;
+    }
+
+    .social-box-desktop {
+        margin: 5em 2em 0 0;
+    }
+
     /* treningi */
 
     .treningi-features {
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
     .treningi-features-panel {
-        display: flex;
         flex-direction: column;
         width: 25%;
         align-items: stretch;
     }
 
+    /* boks crossfit siłownia */
+
+    .boks-back-title {
+        font-size: 14rem;
+        line-height: 12rem;
+    }
+
     /* oferta */
 
     .oferta-features {
-        flex-wrap: nowrap;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .oferta-features-panel {
+        flex-direction: column;
         max-width: 18%;
         min-width: 18%;
         padding: 2em 1em;
@@ -930,6 +976,13 @@ MEDIA
 
     .oferta-bullets p {
         font-size: 1.5rem;
+    }
+
+    /* partnerzy */
+
+    .partnerzy p {
+        font-size: 3.5rem;
+        padding: 0;
     }
 
 }
